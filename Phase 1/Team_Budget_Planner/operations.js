@@ -24,7 +24,7 @@ function addData() {
     //arr.push(emp);
     //sessionStorage.setItem("Hold", arr);
 
-    console.log(abc);
+    
     //var myPTagContent = document.createTextNode(cname + pname + bud); 
     
     //console.log(sessionStorage.getElementById(hold));
@@ -46,12 +46,6 @@ function addData() {
         +"</td><td>"+empJson[i].bbname+"</td><tr>";
         i++;
     }
-    var total;
-    for(j=0;j<=empJson.length)
-    {
-        total += empJson[j].bbname
-    }
-    
     var endTable="</table>"
     tableContent = startTable+tableContent+endTable
     document.getElementById("main").innerHTML=tableContent;

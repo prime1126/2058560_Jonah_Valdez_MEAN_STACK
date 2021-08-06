@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="blog.js"></script>
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        .my-container{
+            border: 1pk solid black;
+        }
+        .my-row{
+            border: 3px solid green;
+        }
+        .my-row2{
+            border: 3px solid green;
+            height: 300px;
+        }
+        .my-col{
+            border: 3px solid blue;
+        }
+        .my-image{
+            size: 20px;
+            border-image-width: 20px;
+        }
+
+    </style>
+    <style>
+        body {
+          background-image: url('image-asset.jpeg');
+        }
+        </style>
+</head>
+<body>
+    <div class="containre">
+        <div class="row center my-row">
+            <div class = "col-12 ">
+                <h1 style="text-align:center;">Simply Blogging</h1> 
+
+            </div>
+        </div>
+        <div class="row my-row">
+            <div class = "col-1 my-col"> 
+                <p style="color: yellow;">MENUE=></p>
+            </div>
+            <div class="col-1 my-col">
+                <a href="home.html">Home</a>
+                
+            </div>
+            <div class="col-1 my-col">
+                <a href="aboutUs.html">AboutUs</a> 
+            </div>
+            <div class="col-1 my-col">
+                <a href="Contacts.html">Contacts</a>
+            </div>
+            <div class="col-8 my-col">
+                <p style="color: green; text-align: center; font-size: 20px;">
+                    Thank you for chosing Simply Blogger for all your posting needs we 
+                    really appreciate your business:)
+                </p>
+            </div>
+        </div>
+        <div class="row" style="height: 100px;">
+
+        </div>
+        <div class="row my-row2">
+            <div class = "col-6  ">
+                <form action="MainPage.html" method="POST" style="text-align: center;">
+                    <label style="color: mediumblue; font-size: 40px;">Title_______</label>
+                    <input type="text" name="Title" id= "title"/><br/>
+                    <label style="color: mediumblue; font-size: 40px;">Articles____</label>
+                    <input type="text"name="Articles" id = "articles"/><br/>
+                    <label style="color: mediumblue; font-size: 40px;">Add Image</label>
+                    <input type="text" name="AddImage" id = "addImage"/><br/>
+                    <button class="btn-add" style="background-color: aqua;">Add Blog</button>
+                    <input type="reset" value="Clear" style="background-color: aquamarine;"/> 
+                </form>
+            </div>
+        </div>
+       
+    </div>
+    <div class="container">
+        <div class="row" id="row">
+            
+        </div>
+    </div>
+</body>
+</html>
