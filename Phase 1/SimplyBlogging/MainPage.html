@@ -30,7 +30,7 @@
     </style>
     <style>
         body {
-          background-image: url('image-asset.jpeg');
+         background-image: url('image-asset.jpeg');
         }
         </style>
 </head>
@@ -44,7 +44,7 @@
         </div>
         <div class="row my-row">
             <div class = "col-1 my-col"> 
-                <p style="color: yellow;">MENUE=></p>
+                <p style="color: rebeccapurple;">MENUE=></p>
             </div>
             <div class="col-1 my-col">
                 <a href="home.html">Home</a>
@@ -68,24 +68,25 @@
         </div>
         <div class="row my-row2">
             <div class = "col-6  ">
-                <form action="MainPage.html" method="POST" style="text-align: center;">
+                <p>Some of the image options to chose from are coding.jpg,healthy.jpg,
+                    sports.jpg and yoga.webp
+                </p>
+                <form onsubmit="return false;" style="text-align: center;" >
                     <label style="color: mediumblue; font-size: 40px;">Title_______</label>
                     <input type="text" name="Title" id= "title"/><br/>
                     <label style="color: mediumblue; font-size: 40px;">Articles____</label>
                     <input type="text"name="Articles" id = "articles"/><br/>
                     <label style="color: mediumblue; font-size: 40px;">Add Image</label>
                     <input type="text" name="AddImage" id = "addImage"/><br/>
-                    <button class="btn-add" style="background-color: aqua;">Add Blog</button>
+                    <button id="btn" style="background-color: aqua;" onclick="addBlog()">Add Blog</button>
                     <input type="reset" value="Clear" style="background-color: aquamarine;"/> 
                 </form>
             </div>
         </div>
-       
-    </div>
-    <div class="container">
-        <div class="row" id="row">
+        <div class="row imagecss" id="rowid" >
             
         </div>
+       
     </div>
 </body>
 </html>
