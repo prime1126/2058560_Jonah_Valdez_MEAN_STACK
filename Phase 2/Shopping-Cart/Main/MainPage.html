@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="Main.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        .sm-row
+        {
+            height: 50px;
+        }
+        .med-row
+        {
+            height: 100px;
+        }
+        .lg-row
+        {
+            height: 300px;
+        }
+
+
+
+        body {
+         background-image: url('MainBackground.jpg');
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <!-- Container level -->
+    <div class="container">
+
+        <!-- Row 1 Start-->
+        <div class="row center med-row">
+
+            <!--  -->
+            <div class="col text-center">
+                <h1 style="color: rgb(9, 54, 200);">Shopping Cart</h1>
+            </div>
+            <!--  -->
+
+            
+        </div>
+        <!-- Row 1 end -->
+
+
+
+        <!-- Row 2 Start -->
+        <div class="row center med-row">
+
+            <!--  -->
+            <div class="col-3 text-right">
+                <h5 style="color: rgb(7, 66, 175); font-size: 30px;">Cart Size:</h5>
+            </div>
+            <!--  -->
+
+            <!--  -->
+            <div class="col-2 text-left">
+                <p style="color: black; font-size: 25px;" id="cart-size">Value</p>
+            </div>
+            <!--  -->
+
+            <!--  -->
+            <div class="col-6 text-right">
+                <a style="color: red; font-size: 30px;" href="../CheckOut/checkOut.html">Checkout</a> 
+            </div>
+            <!--  -->
+
+        </div>
+        <!-- Row 2 End --> 
+        
+        <!-- Row 3 Start -->
+        <div class="row center med-row ">
+
+
+            <!--  -->
+            <div class="col-6 text-right">
+                <form onsubmit="return false;" style="text-align: center;" >
+                    <label style="color: mediumblue; font-size: 40px;">Name:</label>
+                    <input style="background-color: rgba(21, 200, 255, 0.301);" type="text" name="Name" id= "name1"/><br/>
+                    <label style="color: mediumblue; font-size: 40px;">Price_:</label>
+                    <input style="background-color: rgba(21, 200, 255, 0.301);" type="text"name="Price" id = "price1"/><br/>
+                    <button id="btn1" style="background-color: aqua;" onclick="add1Item()" >Add</button>
+                </form>
+
+            </div>
+            <!--  -->
+
+            
+            <!--  -->
+            <div class="col-6 text-left">
+                <form onsubmit="return false;" style="text-align: center;" >
+                    <label style="color: mediumblue; font-size: 40px;">Name:</label>
+                    <input style="background-color: rgba(21, 200, 255, 0.301);" type="text" name="Name" id= "name2"/><br/>
+                    <label style="color: mediumblue; font-size: 40px;">Price:_</label>
+                    <input style="background-color: rgba(21, 200, 255, 0.301);" type="text"name="Price" id = "price2"/><br/>
+                    <button id="btn2" style="background-color: aqua;" onclick="add2Item()">Add</button>
+                </form>
+            </div>
+            <!--  -->
+
+
+        </div>
+        <!-- Row 3 End -->
+
+
+        <!-- Row 5 Start -->
+        <div class="row center med-row ">
+
+        </div>
+        <!-- Row 3 End -->
+
+
+
+        <!-- Row 5 Start -->
+        <div class="row center med-row">
+
+
+            <!--  -->
+            <div class="col-6 text-right">
+                <form onsubmit="return false;" style="text-align: center;" >
+                    <label style="color: mediumblue; font-size: 40px;">Name:</label>
+                    <input style="background-color: rgba(21, 200, 255, 0.301);" type="text" name="Name" id= "name3"/><br/>
+                    <label style="color: mediumblue; font-size: 40px;">Price_:</label>
+                    <input style="background-color: rgba(21, 200, 255, 0.301);" type="text"name="Price" id = "price3"/><br/>
+                    <button id="btn3" style="background-color: aqua;" onclick="add3Item()" >Add</button>
+                </form>
+
+            </div>
+            <!--  -->
+
+            
+            <!--  -->
+            <div class="col-6 text-left">
+                <form onsubmit="return false;" style="text-align: center;" >
+                    <label style="color: mediumblue; font-size: 40px;">Name:</label>
+                    <input style="background-color: rgba(21, 200, 255, 0.301);" type="text" name="Name" id= "name4"/><br/>
+                    <label style="color: mediumblue; font-size: 40px;">Price:_</label>
+                    <input style="background-color: rgba(21, 200, 255, 0.301);" type="text"name="Price" id = "price4"/><br/>
+                    <button id="btn4" style="background-color: aqua;" onclick="add4Item()">Add</button>
+                </form>
+            </div>
+            <!--  -->
+
+
+        </div>
+        <!-- Row 5 End -->
+
+    </div>
+    <!-- Container End -->
+
+    
+</body>
+</html>

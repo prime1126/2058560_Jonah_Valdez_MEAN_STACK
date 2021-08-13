@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="checkOut.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        .sm-row
+        {
+            height: 50px;
+        }
+        .med-row
+        {
+            height: 100px;
+        }
+        .lg-row
+        {
+            height: 300px;
+        }
+        table 
+        {
+            width: 100%;
+            height: 100%;
+        }
+
+
+        body {
+         background-image: url('background2.jpeg');
+        }
+    </style>
+</head>
+<body>
+    <!-- This is the start of the container -->
+    <div class="containre">
+
+        <!-- Start Row 1 -->
+        <div class="row center med-row">
+
+            <!-- Start Col 1 -->
+            <div class = "col-10 text-center"> 
+                <h3 style="color: blue;">Shopping Cart CheckOut</h3>
+            </div>
+            <!-- End Col 1 -->
+
+            <!-- Start Col 2 -->
+            <div class = "col-2 text-left"> 
+                <a style="color:white;font-size: 30px;" href="../Main/MainPage.html">Back</a>
+            </div>
+            <!-- End Col 2 -->
+
+            
+        </div>
+        <!-- End Row 1 -->
+
+        <!-- Start Row 2 -->
+        <div class="row  med-row">
+
+            <!-- Start Col 1 -->
+            <div class="col-12 text-center">
+                <button id="btn" style="background-color: aqua;" onclick="showTable()">Show Cart</button>
+            </div>
+            <!-- End Col 1 -->
+
+        </div>
+        <!-- End Row 2 -->
+
+
+        <!-- Start Row 3 -->
+        <div class="row lg-row">
+
+            <!-- Star Col 1 -->
+            <div class = "col-4"> 
+                
+            </div>
+            <!-- End Col 1 -->
+
+            <!-- Star Col 2 -->
+            <div id="chart" class = "col-4"> 
+
+            </div>
+            <!-- End Col 2 -->
+
+            <!-- Star Col 3 -->
+            <div class = "col-4 "> 
+
+            </div>
+            <!-- End Col 3 -->
+
+        </div>
+        <!-- End Row 3 -->
+
+        <!-- Start Row 4 -->
+        <div class="row center sm-row">
+
+            <!-- Star Col 1 -->
+            <div class = "col-4 text-right"> 
+                <h3 style="color: blue;">Total Price</h3>
+            </div>
+            <!-- End Col 1 -->
+
+            <!-- Start Col 2 -->
+            <div class = "col-4 text-left "> 
+                <h3 id="total" style="color: rgb(51, 255, 0);">Value</h3>
+            </div>
+            <!-- End Col 1 -->
+            
+        </div>
+        <!-- End Row 4 -->
+
+
+        
+         
+    </div>
+    <!--  This is the end of the container -->
+    
+</body>
+</html>
