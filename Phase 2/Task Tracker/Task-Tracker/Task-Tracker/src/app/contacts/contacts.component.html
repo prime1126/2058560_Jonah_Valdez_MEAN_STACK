@@ -1,0 +1,73 @@
+<div class="container">
+    <!-- Row 1 Start-->
+    <div class="row center med-row">
+
+        <div class="col-12 text-center">
+            <h1>My Portfolio</h1>
+        </div>
+        
+       
+    </div>
+    <!-- Row 1 end -->
+
+    <!-- Row 2 Start -->
+    <div class="row center med-row">
+
+         <!--  -->
+         <div class="col-12 text-left">
+            <h2>Welcome {{user}}</h2>
+            <br>
+
+            <form #loginRef2="ngForm" (ngSubmit)="testData2(loginRef2)">
+                <label>ID</label>
+                <input type="text" name="id" ngModel/>
+                <br/>
+
+                <label>Name</label>
+                <input type="text" name="name" ngModel/>
+                <br/>
+
+                <label>Task</label>
+                <input type="text" name="task" ngModel/>
+                <br/>
+        
+                <label>Deadline</label>
+                <input type="text" name="deadline" ngModel/>
+                <br/>
+                <input type="submit" value="Save"/>
+            </form>
+            <button (click)="showTable()">Show Table</button>
+        </div>
+        <!--  -->
+
+    </div>
+    <!-- Row 2 End --> 
+
+
+    <!-- Row 3 Start -->
+    <!-- This row is for spacing -->
+    <div class="row center lg-row">
+        
+        
+   </div>
+   <!-- Row 3 End --> 
+
+   <!-- Row 4 Start -->
+    <div class="row center med-row">
+        <div id="here">
+             
+        </div>
+        
+
+    </div> 
+    <!-- Row 4 End -->
+
+    
+    <div class="row center lg-row">
+        <div class="col-11 text-right">
+            
+        </div>
+        
+    </div>
+
+</div>

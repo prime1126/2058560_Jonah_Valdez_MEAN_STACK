@@ -1,0 +1,19 @@
+<div>
+    <h2>Login</h2>
+    <form #loginRef1="ngForm" (ngSubmit)="testData(loginRef1)">
+        <label>UserName</label>
+        <input type="text" name="userName" ngModel/>
+        <br/>
+
+        <label>Password</label>
+        <input type="text" name="password" ngModel/>
+        <br/>
+        <input type="submit" value="Login"/>
+        <input type="reset" value="reset"/>
+    </form>
+    <div id="show">
+        
+    </div>
+
+
+</div>
