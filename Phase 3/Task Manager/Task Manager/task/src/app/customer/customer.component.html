@@ -1,0 +1,42 @@
+<div>
+    <form [formGroup]="customerRef" (ngSubmit)="storeInfo()">
+        <label>EmployeeId:</label>
+        <input type="text" formControlName="empid"/><br/>
+        <label>Task:-------</label>
+        <input type="text" formControlName="task"/><br/>
+        <label>TaskId:---------</label>
+        <input type="text" formControlName="taskid"/><br/>
+        <label>Date:---------</label>
+        <input type="text" formControlName="date"/><br/>
+        <input type="submit" value="Store Customer Info"/>
+        <input type="reset" value="Reset"/>
+    </form>
+    <br/>
+    <span style="color:blue">{{storeMsg}}</span>
+
+    <table border="1">
+            <tr>
+                <th>Employee Id:</th>
+                <th>Task: </th>
+                <th>Task Id:</th>
+                <th>Date:</th>
+                
+            </tr>
+            <tr *ngFor="let customer of customers">
+                <td>{{customer.empid}}</td>
+                <td>{{customer.task}}</td>
+                <td>{{customer.taskid}}</td>
+                <td>{{customer.date}}</td>
+            </tr>
+    </table>
+    <br/>
+    <form [formGroup]="loginRef" (ngSubmit)="deleteset()">
+        <label>Task Id to delete</label>
+        <input type="text" formControlName="dtaskid"/><br/>
+        <input type="submit" value="delete"/>
+    </form>
+    <br>
+    <span style="color:blue">{{deleteMsg}}</span>
+    <br/>
+    <hr/>
+</div>
