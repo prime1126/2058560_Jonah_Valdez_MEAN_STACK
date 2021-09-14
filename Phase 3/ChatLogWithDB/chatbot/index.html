@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <script type="text/JavaScript">
+    //let mongoClient = require("mongodb").MongoClient;
+
+    let ws = new WebSocket("ws://localhost:9090");
+    
+    let i = 0;
+    //open the connecton 
+    ws.onopen= ()=> {
+        // send data to web socket server application
+        ws.send("Hello Server, I am Web Socket Client App!");
+        info = ()=> {
+            let setResponses = ["hello", "how are you?", "Im doing great thanks for asking","you have a good day","thank you bye"];
+            let Name = document.getElementById("dd2").value;
+            let msg = document.getElementById("dd").value;
+            ws.send(Name);
+            ws.send(msg);
+            //set up the value that you want to store
+            let cust = JSON.stringify({ name: Name, message : msg });
+
+            //clears the name and message txt boxes 
+            document.getElementById("dd").value="";
+            document.getElementById("dd2").value="";
+//----------------------------------------------------------------------------------------------------------------------------------------------
+             
+//----------------------------------------------------------------------------------------------------------------------------------------------
+            i++;
+            if(i==4)
+            {
+                i = 0;
+            }
+        }
+    }
+    // receive the messag from server application 
+    ws.onmessage = (msg)=> {
+        console.log(msg.data);
+    }
+    </script>
+
+
+</head>
+<body>
+    <h2>Server Chat</h2>
+    Name :<input type="text" id="dd2"/><br/>
+    Message :<input type="text" id="dd"/><br/>
+    <input type="button" value="Send Data" onclick="info()"/>
+    <p id = "response"></p>
+</body>
+</html>

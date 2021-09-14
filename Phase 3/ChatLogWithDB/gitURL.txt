@@ -1,0 +1,7 @@
+GitHub URL:
+https://github.com/prime1126/2058560_Jonah_Valdez_MEAN_STACK.git
+
+Section End project name: Chat bot 
+
+Files and folders to locate in the repository:
+2058560_Jonah_Valdez_MEAN_STACK\Phase 3\ChatBot\ChatBot
