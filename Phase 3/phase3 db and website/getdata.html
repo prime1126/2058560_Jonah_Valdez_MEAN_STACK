@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="get">
+<h4>List of Courses</h4>
+<a href="/get-data">Display all</a>
+<div>
+
+    {{# display course }}
+    <article class="course">
+
+
+        <div>Title of Course: {{this.courseID}}</div>
+        <div>Name of Course: {{this.courseN}}</div>
+
+        <div>Description of Course: {{this.description}}</div>
+
+        <div>Amount of Course: {{this.amount}}</div>
+    </article>
+    
+    {{/display}}
+</div>
+</div>
+</body>
+</html>
